@@ -1,0 +1,380 @@
+[
+  {
+    "id": "3wK9",
+    "name": "Black Panther",
+    "author": "Ta-Nehisi Coates",
+    "releaseDate": "2022-06-15",
+    "priceInCents": 599,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "oZ7P",
+    "name": "Static",
+    "author": "Dwayne McDuffie",
+    "releaseDate": "2021-08-20",
+    "priceInCents": 499,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "m4sN",
+    "name": "Milestone Comics",
+    "author": "Reginald Hudlin",
+    "releaseDate": "2022-03-10",
+    "priceInCents": 499,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "qHdX",
+    "name": "Cyborg",
+    "author": "David F. Walker",
+    "releaseDate": "2023-01-05",
+    "priceInCents": 399,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "jRwA",
+    "name": "Black Lightning",
+    "author": "Tony Isabella",
+    "releaseDate": "2022-12-12",
+    "priceInCents": 549,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "eN6C",
+    "name": "Luke Cage",
+    "author": "Cheo Hodari Coker",
+    "releaseDate": "2021-10-30",
+    "priceInCents": 459,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "kP4R",
+    "name": "Icon",
+    "author": "Dwayne McDuffie",
+    "releaseDate": "2022-09-22",
+    "priceInCents": 579,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "tGzF",
+    "name": "Power Man",
+    "author": "Stan Lee",
+    "releaseDate": "2022-05-17",
+    "priceInCents": 499,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "aB8V",
+    "name": "Hardware",
+    "author": "Dwayne McDuffie",
+    "releaseDate": "2023-03-01",
+    "priceInCents": 389,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "wQ2K",
+    "name": "War Machine",
+    "author": "Greg Pak",
+    "releaseDate": "2022-04-19",
+    "priceInCents": 529,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "vU9P",
+    "name": "Storm",
+    "author": "Eric Jerome Dickey",
+    "releaseDate": "2023-02-09",
+    "priceInCents": 419,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "yCmJ",
+    "name": "Vixen",
+    "author": "G. Willow Wilson",
+    "releaseDate": "2022-11-28",
+    "priceInCents": 569,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "lD1X",
+    "name": "Spawn",
+    "author": "Todd McFarlane",
+    "releaseDate": "2021-09-05",
+    "priceInCents": 469,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "zH7T",
+    "name": "Blade",
+    "author": "Marv Wolfman",
+    "releaseDate": "2023-07-14",
+    "priceInCents": 429,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "gF3S",
+    "name": "Falcon",
+    "author": "Denny O'Neil",
+    "releaseDate": "2022-07-29",
+    "priceInCents": 549,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "pM5N",
+    "name": "Misty Knight",
+    "author": "Archie Goodwin",
+    "releaseDate": "2021-12-23",
+    "priceInCents": 499,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "xZ2C",
+    "name": "Black Goliath",
+    "author": "Tony Isabella",
+    "releaseDate": "2022-08-18",
+    "priceInCents": 459,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "rP1V",
+    "name": "Green Lantern (John Stewart)",
+    "author": "John Ostrander",
+    "releaseDate": "2021-11-05",
+    "priceInCents": 579,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "lZ3X",
+    "name": "Firestorm",
+    "author": "Gerry Conway",
+    "releaseDate": "2022-12-21",
+    "priceInCents": 599,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "gH9N",
+    "name": "Steel",
+    "author": "Louise Simonson",
+    "releaseDate": "2022-10-05",
+    "priceInCents": 499,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "pC1T",
+    "name": "Huntress",
+    "author": "Paul Levitz",
+    "releaseDate": "2021-09-14",
+    "priceInCents": 449,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "xR6W",
+    "name": "John Constantine",
+    "author": "Alan Moore",
+    "releaseDate": "2022-07-01",
+    "priceInCents": 529,
+    "saleItem": false,
+    "inStock": false
+  },
+  {
+    "id": "lQ4K",
+    "name": "Cassandra Cain",
+    "author": "Kelley Puckett",
+    "releaseDate": "2022-05-28",
+    "priceInCents": 429,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "sG5S",
+    "name": "Deadman",
+    "author": "Arnold Drake",
+    "releaseDate": "2022-04-11",
+    "priceInCents": 549,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "mR6Y",
+    "name": "Red Hood",
+    "author": "Judd Winick",
+    "releaseDate": "2021-08-09",
+    "priceInCents": 579,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "tZ8C",
+    "name": "Zatanna",
+    "author": "Paul Dini",
+    "releaseDate": "2022-07-19",
+    "priceInCents": 499,
+    "saleItem": false,
+    "inStock": false
+  },
+  {
+    "id": "aR3V",
+    "name": "Red Arrow",
+    "author": "J.T. Krul",
+    "releaseDate": "2023-03-03",
+    "priceInCents": 429,
+    "saleItem": false,
+    "inStock": false
+  },
+  {
+    "id": "oG6K",
+    "name": "Firestorm",
+    "author": "Gerry Conway",
+    "releaseDate": "2022-11-07",
+    "priceInCents": 449,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "wH9N",
+    "name": "Black Canary",
+    "author": "Brendan Fletcher",
+    "releaseDate": "2021-12-24",
+    "priceInCents": 559,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "pG3T",
+    "name": "Booster Gold",
+    "author": "Geoff Johns",
+    "releaseDate": "2021-07-19",
+    "priceInCents": 429,
+    "saleItem": false,
+    "inStock": false
+  },
+  {
+    "id": "yM5Q",
+    "name": "The Question",
+    "author": "Dennis O'Neil",
+    "releaseDate": "2022-07-13",
+    "priceInCents": 499,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "lN6V",
+    "name": "Green Arrow",
+    "author": "Mike Grell",
+    "releaseDate": "2022-12-11",
+    "priceInCents": 499,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "aG2Z",
+    "name": "Hawkeye",
+    "author": "Matt Fraction",
+    "releaseDate": "2021-11-25",
+    "priceInCents": 549,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "rZ8W",
+    "name": "She-Hulk",
+    "author": "Charles Soule",
+    "releaseDate": "2022-05-29",
+    "priceInCents": 429,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "xP7X",
+    "name": "Deadshot",
+    "author": "John Ostrander",
+    "releaseDate": "2022-10-16",
+    "priceInCents": 459,
+    "saleItem": true,
+    "inStock": true
+  },
+  {
+    "id": "pH4V",
+    "name": "Huntress",
+    "author": "Paul Levitz",
+    "releaseDate": "2022-02-27",
+    "priceInCents": 429,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "aC6T",
+    "name": "John Constantine",
+    "author": "Alan Moore",
+    "releaseDate": "2022-01-15",
+    "priceInCents": 579,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "tG3Q",
+    "name": "Cassandra Cain",
+    "author": "Kelley Puckett",
+    "releaseDate": "2023-03-28",
+    "priceInCents": 449,
+    "saleItem": false,
+    "inStock": true
+  },
+  {
+    "id": "yP2X",
+    "name": "Deadman",
+    "author": "Arnold Drake",
+    "releaseDate": "2022-08-19",
+    "priceInCents": 479,
+    "saleItem": false,
+    "inStock": false
+  },
+  {
+    "id": "lS1C",
+    "name": "Red Hood",
+    "author": "Judd Winick",
+    "releaseDate": "2021-08-29",
+    "priceInCents": 599,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "gZ6V",
+    "name": "Zatanna",
+    "author": "Paul Dini",
+    "releaseDate": "2022-07-28",
+    "priceInCents": 529,
+    "saleItem": true,
+    "inStock": false
+  },
+  {
+    "id": "pZ3S",
+    "name": "Red Arrow",
+    "author": "J.T. Krul",
+    "releaseDate": "2023-03-11",
+    "priceInCents": 499,
+    "saleItem": false,
+    "inStock": true
+  }
+]
