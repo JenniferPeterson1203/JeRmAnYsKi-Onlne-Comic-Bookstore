@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "index": "node index.js index",
+    "cart": "node index.js cart",
     "create": "node index.js create",
     "show": "node index.js show",
     "update": "node index.js update",
     "destroy": "node index.js destroy",
-    "score": "node index.js score"
+    "total": "node index.js total",
+    "addToCart": "node index.js addToCart",
+    "clearCart": "node index.js clearCart"
   },
   "keywords": [],
   "author": "Jennifer Peterson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
 }
