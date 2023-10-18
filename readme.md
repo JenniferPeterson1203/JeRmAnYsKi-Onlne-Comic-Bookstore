@@ -35,6 +35,31 @@ Users have the option to create and manage their shopping cart. The cart allows 
 - **Extensive Catalog:** We offer a vast selection of comic books, ensuring that users can find titles that suit their preferences.
 - **Customization:** Users have control over their shopping cart, allowing them to manage their selections as they see fit.
 
-## Get Started
+## Getting Started
 
 Start exploring our online comic book store today and embark on your journey to discover, collect, and enjoy your favorite comic book titles.
+
+Follow these steps to get started with the Comic Book Store project:
+
+1. **Fork and Clone the Repository**
+
+   - Fork this repository to your GitHub account by clicking the "Fork" button at the top right of this page.
+   - Clone your forked repository to your local machine using the following command:
+
+     ```shell
+     git clone https://github.com/your-username/comic-book-store.git
+     ```
+
+2. **Navigate to the Repository**
+
+   Change your current working directory to the cloned repository by running:
+
+```shell
+ cd comic-book-store
+```
+
+Run the following command:
+
+```shell
+npm install
+```
