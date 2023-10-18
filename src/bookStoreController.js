@@ -7,6 +7,7 @@ const { readJSONFile } = require("./helpers");
 const cart = readJSONFile("./data", "bookStoreCart.json");
 
 const inventory = readJSONFile("./data", "bookStoreInventory.json");
+const inform = console.log;
 
 //update Function
 const update = (
@@ -31,6 +32,19 @@ const update = (
   };
   inventory.splice(foundBook, 1, updatedBook);
   return inventory;
+};
+
+//destroy function
+const destroy = (cart, bookId) => {
+  const index = cart.findIndex((book) => book.id === bookId);
+  if (index > -1) {
+    cart.splice(index, 1);
+    inform(`Book has been successfully removed from the cart`);
+    return cart;
+  } else {
+    inform(`Book was not found. No action taken`);
+    return cart;
+  }
 };
 
 //create Function
@@ -77,7 +91,7 @@ const addToCart = (cart, inventory, input) => {
 //total function
 const total = (cart) => {
   if (cart.length === 0) {
-    return `Your cart is empty dude. Go SHOP!`;
+    return `Your cart is empty dude. Go SHOP 🤪!`;
   }
   const cartTotal = cart
     .map((book) => book.priceInCents)
@@ -134,4 +148,5 @@ module.exports = {
   showById,
   showCart,
   total,
+  destroy,
 };
