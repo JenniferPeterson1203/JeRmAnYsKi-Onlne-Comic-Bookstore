@@ -1,7 +1,7 @@
 //the action functions goes in the Controller file
 
 const { nanoid } = require("nanoid");
-
+const lolcats = require("lolcats");
 //import the readJSONFile function
 const { readJSONFile } = require("./helpers");
 const cart = readJSONFile("./data", "bookStoreCart.json");
@@ -39,10 +39,10 @@ const destroy = (cart, bookId) => {
   const index = cart.findIndex((book) => book.id === bookId);
   if (index > -1) {
     cart.splice(index, 1);
-    inform(`Book has been successfully removed from the cart`);
+    lolcats.print(`Book has been successfully removed from the cart`);
     return cart;
   } else {
-    inform(`Book was not found. No action taken`);
+    lolcats.print(`Book was not found. No action taken`);
     return cart;
   }
 };
@@ -140,6 +140,14 @@ const showByName = (inventory, name) => {
   return message;
 };
 
+//clearCart function
+const clearCart = (cart) => {
+  if (cart.length > 0) {
+    cart.length = 0;
+  }
+  return cart;
+};
+
 module.exports = {
   addToCart,
   create,
@@ -149,4 +157,5 @@ module.exports = {
   showCart,
   total,
   destroy,
+  clearCart,
 };
