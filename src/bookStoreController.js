@@ -60,9 +60,12 @@ const create = (
 //addToCart function
 const addToCart = (cart, inventory, input) => {
   for (let item of inventory) {
+    const itemName = item.name ? item.name.toLowerCase() : "";
+    const authorName = item.author ? item.author.toLowerCase() : "";
+
     if (
-      item.name.toLowerCase() === input.toLowerCase() ||
-      item.author.toLowerCase() === input.toLowerCase() ||
+      itemName === input.toLowerCase() ||
+      authorName === input.toLowerCase() ||
       (item.id === input && item.inStock === true)
     ) {
       cart.push(item);
@@ -71,12 +74,22 @@ const addToCart = (cart, inventory, input) => {
   return cart;
 };
 
+//total function
+const total = (cart = [...cart]) => {
+  const cartTotal = cart
+    .map((book) => book.priceInCents)
+    .reduce((acc, curr) => acc + curr / 100, 0);
+  return `$${cartTotal}`;
+};
+
 //showById Function
 const showById = (inventory, bookId) => {
   let message;
   const book = inventory.find((book) => {
     if (book.id === bookId) {
-      message = `${book.id} ${book.name} ${book.author} ${book.priceInCents}`;
+      message = `Book id: ${book.id}\nTitle: ${book.name}\nAuthor:${
+        book.author
+      }\nPrice: $${book.priceInCents / 100}`;
     }
   });
   return message;
@@ -84,9 +97,14 @@ const showById = (inventory, bookId) => {
 
 //showCart
 const showCart = (cart) => {
-  let cartContents = "You're cart is currenlty empty";
-  for (let ele of cart) {
-    cartContents = `You now have ${ele.name} ${ele.author}`;
+  let cartContents = "Your cart is currently empty";
+  if (cart.length > 0) {
+    cartContents = "";
+    for (let ele of cart) {
+      cartContents += `${ele.name} by ${ele.author}\n $${
+        ele.priceInCents / 100
+      }\n\n`;
+    }
   }
   return cartContents;
 };
@@ -96,10 +114,20 @@ const showByName = (inventory, name) => {
   let message;
   const book = inventory.find((book) => {
     if (book.name === name) {
-      message = `${book.id} ${book.name} ${book.author} ${book.priceInCents}`;
+      message = `Book id: ${book.id}\nTitle: ${book.name}\nAuthor:${
+        book.author
+      }\nPrice: $${book.priceInCents / 100}`;
     }
   });
   return message;
 };
 
-module.exports = { addToCart, create, update, showByName, showById, showCart };
+module.exports = {
+  addToCart,
+  create,
+  update,
+  showByName,
+  showById,
+  showCart,
+  total,
+};
