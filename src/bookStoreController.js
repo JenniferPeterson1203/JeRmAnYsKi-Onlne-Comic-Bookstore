@@ -75,11 +75,15 @@ const addToCart = (cart, inventory, input) => {
 };
 
 //total function
-const total = (cart = [...cart]) => {
+const total = (cart) => {
+  if (cart.length === 0) {
+    return `Your cart is empty dude. Go SHOP!`;
+  }
   const cartTotal = cart
     .map((book) => book.priceInCents)
-    .reduce((acc, curr) => acc + curr / 100, 0);
-  return `$${cartTotal}`;
+    .reduce((acc, curr) => acc + curr / 100, 0)
+    .toFixed(2);
+  return `Your total comes out to: \n$${cartTotal}`;
 };
 
 //showById Function
