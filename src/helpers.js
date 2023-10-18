@@ -9,7 +9,7 @@ function readJSONFile(path, fileName) {
 
 //writeJSONFile function
 function writeJSONFile(path, fileName, data) {
-  data = JSON.stringify(data);
+  data = JSON.stringify(data, null, 2);
   return writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" });
 }
 

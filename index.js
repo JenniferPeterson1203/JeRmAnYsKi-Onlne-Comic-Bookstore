@@ -1,17 +1,15 @@
 //import the read and write functions we created in the helpers file
 const { readJSONFile, writeJSONFile } = require("./src/helpers");
 
-//grab the data inside of the bookStoreCart and use the readJSONFile function in order to be able to read the file in here
-//assign it to the variable books so that we can reuse it
+//make the bookstore cart json file readable in a JS file and assign it to the variable books so that we can reuse it
 const books = readJSONFile("./data", "bookStoreCart.json");
-// console.log(books);
 
+//make the book inventory json file readable in a JS file and assign it to the variable bookInventory so that we can reuse it
 const bookInventory = readJSONFile("./data", "bookStoreInventory.json");
-// console.log(bookInventory);
 
-console.log(books);
+const lolcats = require("lolcats");
 
-//import the functions created in the Controller file
+//import the functions created in the bookStoreController file
 const {
   addToCart,
   create,
@@ -19,6 +17,9 @@ const {
   showByName,
   showById,
   showCart,
+  total,
+  destroy,
+  clearCart,
 } = require("./src/bookStoreController");
 
 // create an alias called inform to store the console.log function
@@ -63,12 +64,12 @@ function run() {
 
     case "showByName":
       const bookInformation = showByName(bookInventory, bookTitle);
-      inform(bookInformation);
+      lolcats.print(bookInformation);
       break;
 
     case "showById":
       const bookInfo = showById(bookInventory, process.argv[3]);
-      inform(bookInfo);
+      lolcats.print(bookInfo);
       break;
 
     case "update":
@@ -86,12 +87,21 @@ function run() {
       break;
 
     case "destroy":
-      inform(action, book);
+      writeToFile = true;
+      updatedCart = destroy(books, process.argv[3]);
       break;
 
     case "clearCart":
       writeToFile = true;
       updatedCart = clearCart(books);
+      break;
+
+    case "total":
+      const cartTotal = total(books);
+      lolcats.print(cartTotal);
+      // inform(cartTotal);
+      writeJSONFile("./data", "bookStoreStoreCart.json", cartTotal);
+      break;
 
     case "addToCart":
       writeToFile = true;
@@ -101,12 +111,11 @@ function run() {
       inform(action);
       break;
     default:
-      inform("There was an error.");
+      lolcats.print("There was an error.");
   }
   if (writeToFile) {
     writeJSONFile("./data", "bookStoreCart.json", updatedCart);
   }
 }
 
-// console.log(updatedCart);
 run();
